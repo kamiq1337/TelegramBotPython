@@ -3,7 +3,7 @@ from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 from info import description, history, date
 from telegram.ext import Updater, CommandHandler, MessageHandler, filters
 
-bot = telebot.TeleBot('6967644763:AAEkh2SiaJrXYI9uwUpcKHY6Yo26EzCzt9E')
+bot = telebot.TeleBot('YOU_TOKEN')
 @bot.message_handler(commands=['start']) 
 def start_bot(message): 
     bot.send_message(chat_id=message.chat.id, text='я - бот написанный на Python. Я могу рассказать Вам о различных настольных играх, а так же сыграть с Вами в небольшую игру! Для того чтобы воспользоваться моими функциями используйте команду /help')
